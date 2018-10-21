@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jkb.fragment.rigger.annotation.Puppet;
+
 import org.rccggoshen.androidapp.R;
 import org.rccggoshen.androidapp.ui.main.NavViews.dummy.DummyContent;
 import org.rccggoshen.androidapp.ui.main.NavViews.dummy.DummyContent.DummyItem;
@@ -22,6 +24,8 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
+
+@Puppet()
 public class ForumListFragment extends Fragment {
 
     // TODO: Customize parameter argument names

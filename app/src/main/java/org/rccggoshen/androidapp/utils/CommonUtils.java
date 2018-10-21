@@ -46,7 +46,9 @@ public final class CommonUtils {
     }
 
     public static ProgressDialog showLoadingDialog(Context context) {
+
         ProgressDialog progressDialog = new ProgressDialog(context);
+            /*
         progressDialog.show();
         if (progressDialog.getWindow() != null) {
             progressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -55,7 +57,9 @@ public final class CommonUtils {
         progressDialog.setIndeterminate(true);
         progressDialog.setCancelable(false);
         progressDialog.setCanceledOnTouchOutside(false);
+         */
         return progressDialog;
+
     }
 
     @SuppressLint("all")

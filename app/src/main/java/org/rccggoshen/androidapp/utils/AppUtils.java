@@ -34,6 +34,7 @@ public final class AppUtils {
 
     public static void openPlayStoreForApp(Context context) {
         final String appPackageName = context.getPackageName();
+        /*
         try {
             // start intent from action view.
             context.startActivity(new Intent(Intent.ACTION_VIEW,
@@ -46,6 +47,7 @@ public final class AppUtils {
                             .getResources()
                             .getString(R.string.app_google_play_store_link) + appPackageName)));
         }
+        */
     }
 
 }

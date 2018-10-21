@@ -8,8 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import org.rccggoshen.androidapp.R;
+import org.rccggoshen.androidapp.ui.base.BaseActivity;
 
-public class SignupActivity extends AppCompatActivity implements SignupMvpView{
+public class SignupActivity extends BaseActivity implements SignupMvpView{
 
 
 
@@ -30,4 +31,17 @@ public class SignupActivity extends AppCompatActivity implements SignupMvpView{
         });
     }
 
+    @Override
+    public void onError(int big){
+
+    }
+
+    @Override
+    public void onError(String big){
+
+    }
+    @Override
+    public void setUp(){
+
+    }
 }

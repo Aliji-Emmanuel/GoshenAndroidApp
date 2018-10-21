@@ -104,6 +104,7 @@ public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
         // set error on the view onError method.
 
         // if error is null
+        /*
         if (error == null || error.getErrorBody() == null) {
             getMvpView().onError(R.string.api_default_error);
             return;
@@ -146,11 +147,12 @@ public class BasePresenter<V extends MvpView> implements MvpPresenter<V> {
             Log.e(TAG, "handleApiError", e);
             getMvpView().onError(R.string.api_default_error);
         }
+        */
     }
 
     @Override
     public void setUserAsLoggedOut() {
-        getDataManager().setAccessToken(null);
+       // getDataManager().setAccessToken(null);
     }
 
     public static class MvpViewNotAttachedException extends RuntimeException {

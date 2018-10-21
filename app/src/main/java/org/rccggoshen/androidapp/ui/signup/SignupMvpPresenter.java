@@ -1,11 +1,15 @@
 package org.rccggoshen.androidapp.ui.signup;
 
+import org.rccggoshen.androidapp.data.DataManager;
+import org.rccggoshen.androidapp.ui.base.BasePresenter;
 import org.rccggoshen.androidapp.ui.base.MvpPresenter;
+import org.rccggoshen.androidapp.utils.rx.SchedulerProvider;
 
-public interface SignupMvpPresenter extends MvpPresenter {
-    void onServerSignupClick(String email, String password);
+import javax.inject.Inject;
 
-    void onGoogleSignupClick();
+import io.reactivex.disposables.CompositeDisposable;
 
-    void onFacebookSignupClick();
+public interface SignupMvpPresenter<V extends SignupMvpView> extends MvpPresenter {
+
+
 }

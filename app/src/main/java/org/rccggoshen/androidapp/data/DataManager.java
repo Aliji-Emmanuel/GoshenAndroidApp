@@ -29,14 +29,11 @@ import io.reactivex.Observable;
 // extending these interfaces makes this class inherit all the methods.
 public interface DataManager extends DbHelper, PreferencesHelper, ApiHelper {
 
-    void updateApiHeader(Long userId, String accessToken);
+    //void updateApiHeader(Long userId, String accessToken);
 
-    void setUserAsLoggedOut();
+    //void setUserAsLoggedOut();
 
-    Observable<Boolean> seedDatabaseQuestions();
-
-    Observable<Boolean> seedDatabaseOptions();
-
+    /*
     void updateUserInfo(
             String accessToken,
             Long userId,
@@ -44,7 +41,7 @@ public interface DataManager extends DbHelper, PreferencesHelper, ApiHelper {
             String userName,
             String email,
             String profilePicPath);
-
+    */
     enum LoggedInMode {
 
         LOGGED_IN_MODE_LOGGED_OUT(0),

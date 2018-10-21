@@ -73,11 +73,14 @@ public class ApplicationModule {
         return AppConstants.DB_NAME;
     }
 
+    /*
     @Provides
     @ApiInfo
     String provideApiKey() {
+
         return BuildConfig.API_KEY;
     }
+    */
 
     @Provides
     @PreferenceInfo
@@ -109,6 +112,7 @@ public class ApplicationModule {
         return appApiHelper;
     }
 
+    /*
     @Provides
     @Singleton
     ApiHeader.ProtectedApiHeader provideProtectedApiHeader(@ApiInfo String apiKey,
@@ -118,5 +122,6 @@ public class ApplicationModule {
                 preferencesHelper.getCurrentUserId(),
                 preferencesHelper.getAccessToken());
     }
+    */
 
 }

@@ -23,28 +23,28 @@ import org.rccggoshen.androidapp.data.DataManager;
 
 public interface PreferencesHelper {
 
-    int getCurrentUserLoggedInMode();
+    //int getCurrentUserLoggedInMode();
 
-    void setCurrentUserLoggedInMode(DataManager.LoggedInMode mode);
+    //void setCurrentUserLoggedInMode(DataManager.LoggedInMode mode);
 
-    Long getCurrentUserId();
+    //Long getCurrentUserId();
 
-    void setCurrentUserId(Long userId);
+    //void setCurrentUserId(Long userId);
 
-    String getCurrentUserName();
+    //String getCurrentUserName();
 
-    void setCurrentUserName(String userName);
+    //void setCurrentUserName(String userName);
 
-    String getCurrentUserEmail();
+    //String getCurrentUserEmail();
 
-    void setCurrentUserEmail(String email);
+    //void setCurrentUserEmail(String email);
 
-    String getCurrentUserProfilePicUrl();
+   // String getCurrentUserProfilePicUrl();
 
-    void setCurrentUserProfilePicUrl(String profilePicUrl);
+    //void setCurrentUserProfilePicUrl(String profilePicUrl);
 
-    String getAccessToken();
+    //String getAccessToken();
 
-    void setAccessToken(String accessToken);
+    //void setAccessToken(String accessToken);
 
 }

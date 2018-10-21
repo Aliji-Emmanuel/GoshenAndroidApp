@@ -19,6 +19,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -47,6 +48,7 @@ import org.rccggoshen.androidapp.ui.main.NavViews.Home;
 import org.rccggoshen.androidapp.ui.main.NavViews.Media;
 import org.rccggoshen.androidapp.ui.main.NavViews.Publications;
 import org.rccggoshen.androidapp.ui.main.NavViews.Store;
+import org.rccggoshen.androidapp.ui.main.NavViews.dummy.DummyContent;
 import org.rccggoshen.androidapp.utils.ScreenUtils;
 
 import com.felix.bottomnavygation.BottomNav;
@@ -69,7 +71,9 @@ import butterknife.ButterKnife;
 // TODO: implement setUp method from BaseActivity.
 
 @Puppet(containerViewId = R.id.tab_views_container)
-public class MainActivity extends BaseActivity implements MainMvpView, BottomNavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends BaseActivity implements MainMvpView, BottomNavigationView.OnNavigationItemSelectedListener,
+        ForumListFragment.OnListFragmentInteractionListener, Media.OnFragmentInteractionListener,
+        Store.OnFragmentInteractionListener,Publications.OnFragmentInteractionListener,Home.OnListFragmentInteractionListener{
 
     @Inject
     MainMvpPresenter<MainMvpView> mPresenter;
@@ -84,15 +88,18 @@ public class MainActivity extends BaseActivity implements MainMvpView, BottomNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getActivityComponent().inject(this);
+        //getActivityComponent().inject(this);
 
         setUnBinder(ButterKnife.bind(this));
 
-        mPresenter.onAttach(this);
+        //mPresenter.onAttach(this);
 
         //getting bottom navigation view and attaching the listener
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_nav);
         bottomNavigation.setOnNavigationItemSelectedListener(this);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
 
     }
 
@@ -131,6 +138,8 @@ public class MainActivity extends BaseActivity implements MainMvpView, BottomNav
     }
 
 
+
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -157,5 +166,14 @@ public class MainActivity extends BaseActivity implements MainMvpView, BottomNav
 
     @Override
     public void setUp(){}
+
+    @Override
+    public void onListFragmentInteraction(DummyContent.DummyItem item){
+
+    }
+    @Override
+    public void onFragmentInteraction(Uri uri){
+
+    }
 
 }

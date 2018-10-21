@@ -36,10 +36,6 @@ public class AppApiHelper implements ApiHelper {
         mApiHeader = apiHeader;
     }
 
-    @Override
-    public ApiHeader getApiHeader() {
-        return mApiHeader;
-    }
 // TODO: implement all signUp and Login API requests.
 }
 

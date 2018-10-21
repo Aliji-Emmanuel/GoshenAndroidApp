@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.rccggoshen.androidapp.R;
 import org.rccggoshen.androidapp.ui.main.NavViews.Home.OnListFragmentInteractionListener;
 import org.rccggoshen.androidapp.ui.main.NavViews.dummy.DummyContent.DummyItem;
 

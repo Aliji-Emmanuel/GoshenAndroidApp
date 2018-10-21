@@ -4,5 +4,4 @@ import org.rccggoshen.androidapp.ui.base.MvpView;
 
 public interface SignupMvpView extends MvpView {
 
-    void openMainActivity();
 }

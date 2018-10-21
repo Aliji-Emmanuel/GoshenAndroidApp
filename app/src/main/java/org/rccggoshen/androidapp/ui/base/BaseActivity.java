@@ -34,7 +34,6 @@ import android.widget.Toast;
 import org.rccggoshen.androidapp.MvpApp;
 import org.rccggoshen.androidapp.R;
 import org.rccggoshen.androidapp.di.component.ActivityComponent;
-import org.rccggoshen.androidapp.di.component.DaggerActivityComponent;
 import org.rccggoshen.androidapp.di.module.ActivityModule;
 import org.rccggoshen.androidapp.ui.login.LoginActivity;
 import org.rccggoshen.androidapp.utils.CommonUtils;
@@ -58,11 +57,12 @@ public abstract class BaseActivity extends AppCompatActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       /*
         mActivityComponent = DaggerActivityComponent.builder()
                 .activityModule(new ActivityModule(this))
                 .applicationComponent(((MvpApp) getApplication()).getComponent())
                 .build();
-
+        */
     }
 
     public ActivityComponent getActivityComponent() {

@@ -21,7 +21,6 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.interceptors.HttpLoggingInterceptor.Level;
 import org.rccggoshen.androidapp.data.DataManager;
 import org.rccggoshen.androidapp.di.component.ApplicationComponent;
-import org.rccggoshen.androidapp.di.component.DaggerApplicationComponent;
 import org.rccggoshen.androidapp.di.module.ApplicationModule;
 import org.rccggoshen.androidapp.utils.AppLogger;
 
@@ -42,12 +41,12 @@ public class MvpApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        /*
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this)).build();
 
         mApplicationComponent.inject(this);
-
+        */
         AppLogger.init();
 
         AndroidNetworking.initialize(getApplicationContext());

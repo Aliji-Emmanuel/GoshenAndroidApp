@@ -36,7 +36,7 @@ import dagger.Component;
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
 
-    void inject(MvpApp app);
+    //void inject(MvpApp app);
 
 
     @ApplicationContext
@@ -44,5 +44,5 @@ public interface ApplicationComponent {
 
     Application application();
 
-    DataManager getDataManager();
+    //DataManager getDataManager();
 }
